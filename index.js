@@ -13,14 +13,14 @@ inquirer
             message: "Please give a description of the project",
             name: "description",
         },
-        // {
-        //     type: "input",
-        //     message: "Please give a description of the project",
-        //     name: "description",
-        // },
+        {
+            type: "input",
+            message: "Please give a description of the project",
+            name: "description",
+        },
     ])
     .then(function (response) {
-        let readme = `# ${response.title} \n ## Description \n ${response.description}`;
+        let readme = `# ${response.title} \n ## Description \n ${response.description} \n `;
         // let description = `# Description \n ${response.password}`;
 
         fs.writeFile("README1.md", readme, function (err) {
