@@ -2,8 +2,18 @@
 ## Description
 asd
 ## Table of Contents
-* [Installation](#installation)## Installation
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contribution Guidelines](#contribute)
+## Installation
 asd
 ## Usage
 asd
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<a name="contribute"></a>
+## Contribution Guidelines
+asd
+## Tests
+asd
