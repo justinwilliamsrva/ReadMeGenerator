@@ -36,19 +36,19 @@ inquirer
         },
         {
             type: "input",
-            message: "Provide any tests for the website",
+            message: "Provide any tests instructions for the project",
             name: "tests",
         },
     ])
     .then(function (response) {
         let title = `# ${response.title} \n`;
         let desc = `## Description\n${response.description}\n`;
-        let table = `## Table of Contents\n* [Installation](#installation)\n* [Usage](#usage)\n* [License](#license)\n* [Contribution Guidelines](#contribution guidelines)\n`;
+        let table = `## Table of Contents\n* [Installation](#installation)\n* [Usage](#usage)\n* [License](#license)\n* [Contribution Guidelines](#contribute)\n`;
         let install = `## Installation\n${response.install}\n`;
         let usage = `## Usage\n${response.usage}\n`;
         let license = "";
         licenseBadge();
-        let contribute = `## Contribution Guidelines\n${response.contribute}\n`;
+        let contribute = `<a name="contribute"></a>\n## Contribution Guidelines\n${response.contribute}\n`;
         let test = `## Tests\n${response.tests}\n`;
 
         let readme = title + desc + table + install + usage + license + contribute + test;
