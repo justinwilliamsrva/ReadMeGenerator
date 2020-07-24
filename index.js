@@ -33,7 +33,7 @@ inquirer
     .then(function (response) {
         let title = `# ${response.title} \n`;
         let desc = `## Description\n${response.description}\n`;
-        let table = `## Table of Contents\n* [Installation](#installation)`;
+        let table = `## Table of Contents\n* [Installation](#installation)\n`;
         let install = `## Installation\n${response.install}\n`;
         let usage = `## Usage\n${response.usage}\n`;
         let license = "";
