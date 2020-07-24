@@ -27,7 +27,7 @@ inquirer
             type: "list",
             message: "What license will you use?",
             name: "license",
-            choices: ["MIT", "Apache", "GLPv3", "BSD"],
+            choices: ["MIT", "Apache", "GPLv3", "BSD"],
         },
     ])
     .then(function (response) {
@@ -37,23 +37,24 @@ inquirer
         let install = `## Installation\n${response.install}\n`;
         let usage = `## Usage\n${response.usage}\n`;
         let license = "";
-        console.log(response.license);
-        console.log(typeof response.license);
+
         function licenseBadge() {
             switch (response.license) {
                 case "MIT":
                     license =
-                        "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+                        "##License\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
                     break;
                 case "Apache":
-                    console.log("fog");
+                    license =
+                        "##License\n[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
                     break;
-                case "GLPv3":
-                    console.log("fog");
+                case "GPLv3":
+                    license =
+                        "##License\n[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
                     break;
                 case "BSD":
-                    console.log("fog");
-                    break;
+                    license =
+                        "##License\n[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
             }
         }
         licenseBadge();
