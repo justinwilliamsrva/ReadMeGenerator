@@ -51,19 +51,20 @@ inquirer
         },
     ])
     .then(function (response) {
-        let title = `# ${response.title} \n`;
+        let license = "";
+        let badge = "";
+        licenseBadge();
+        let title = `# ${response.title}\n${badge}`;
         let desc = `## Description\n${response.description}\n`;
-        let table = `## Table of Contents\n* [Installation](#installation)\n* [Usage](#usage)\n* [License](#license)\n* [Contribution Guidelines](#contribute)\n* [Tests](#tests)\n`;
+        let table = `## Table of Contents\n* [Installation](#installation)\n* [Usage](#usage)\n* [License](#license)\n* [Contribution Guidelines](#contribute)\n* [Tests](#tests)\n* [Questions](#questions)\n`;
         let install = `## Installation\n${response.install}\n`;
         let usage = `## Usage\n${response.usage}\n`;
-        let badge = "";
-        let license = "";
-        licenseBadge();
         let contribute = `<a name="contribute"></a>\n## Contribution Guidelines\n${response.contribute}\n`;
         let tests = `## Tests\n${response.tests}\n`;
-
-        let readme = badge + title + desc + table + install + usage + license + contribute + tests;
-        fs.writeFile("README1.md", readme, function (err) {
+        let questions = `## Questions\nContact to me with any questions at www.github.com/${response.github} or email me at ${response.email}`;
+        let readme =
+            title + desc + table + install + usage + license + contribute + tests + questions;
+        fs.writeFile("exampleREADME.md", readme, function (err) {
             if (err) {
                 return console.log(err);
             }
