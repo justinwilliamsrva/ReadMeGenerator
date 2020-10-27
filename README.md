@@ -1,7 +1,12 @@
 # Unit 09 Node.js and ES6+ Homework: Good README Generator
 
+## Image and Video
 [Demonstration Video](https://drive.google.com/file/d/19YkiwiE1GzRSNIvrEdtlwBTzSuRm8SVZ/view?usp=sharing)
 ![image](https://user-images.githubusercontent.com/63308516/88403401-7fbd6e00-cd9a-11ea-8c20-7cad24925627.png)
+
+## How to Use
+
+
 
 ## User Story
 
