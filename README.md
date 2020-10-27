@@ -5,7 +5,9 @@
 ![image](https://user-images.githubusercontent.com/63308516/88403401-7fbd6e00-cd9a-11ea-8c20-7cad24925627.png)
 
 ## How to Use
-
+* Clone Repo
+```npm install
+node index.js```
 
 
 ## User Story
